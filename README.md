@@ -31,5 +31,13 @@ wc canbus_report_all_sorted_uniq.csv
 ```
 Now, you will get two csv canbus sensor logs. 
 
+For earlier dataset, the bag files are arranged diffenently:
+```
+find . -name "*.bag" -exec rostopic echo -b {} -p "/vehicle/steering_report" > steering_report_all_mixed.csv \;
+grep -v "field.header" steering_report_all_mixed.csv | awk 'BEGIN{FS=","} {print $1" "$5}' | sort -n | uniq > steering_report_all_sorted_uniq.csv
+wc steering_report_all_sorted_uniq.csv
+```
+
+
 
 
