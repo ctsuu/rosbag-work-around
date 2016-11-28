@@ -34,7 +34,6 @@ wc steering_report_all_sorted_uniq.csv
 If you have chance open a bag file
 ```
 $ rosbag info *.bag
-```
 path:        HMB_3_release.bag
 version:     2.0
 duration:    4:40s (280s)
@@ -47,7 +46,7 @@ types:       sensor_msgs/CameraInfo      [c9a58c1b0b154e0e6da7578cb991d214]
              sensor_msgs/CompressedImage [8f7a12909da2c9d3332d540a0977563f]
 topics:      /center_camera/camera_info              5614 msgs    : sensor_msgs/CameraInfo     
              /center_camera/image_color/compressed   5614 msgs    : sensor_msgs/CompressedImage
-
+```
 Modify the extract commend to mach topics: 
 ```
 find . -name "*.bag" -exec rostopic echo -b {} -p "/center_camera/camera_info" > camera_report_all_mixed.csv \;
@@ -69,9 +68,10 @@ open the camera_report_all_sorted_uniq.csv, I get the following info:
 1479425441433005242 0
 ```
 according to the bag time stamp:
+```
 start:       Nov 17 2016 16:30:41.18 (1479425441.18)
 end:         Nov 17 2016 16:35:21.89 (1479425721.89)
-
+```
 you can split the string to time stamp and extension. 
 
 However, the final_example.csv frame_id is different from the bag extraction. 
