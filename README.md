@@ -86,7 +86,8 @@ frame_id,steering_angle
 1479425441482746958,-0.0239574497565627
 ```
 Only these frame_ids match picture's file name and grading system. 
-*1479425441182877835.jpg
+1479425441182877835.jpg
+![1479425441182877835](https://cloud.githubusercontent.com/assets/22917810/20677376/1c2ca254-b550-11e6-9e2d-c9f5c682e920.jpg)
 
 
 Enjoy the new challenge. 
