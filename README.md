@@ -86,6 +86,8 @@ frame_id,steering_angle
 1479425441482746958,-0.0239574497565627
 ```
 Only these frame_ids match picture's file name and grading system. 
+*1479425441182877835.jpg
+
 
 Enjoy the new challenge. 
 
